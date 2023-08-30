@@ -1,0 +1,4 @@
+1. Buat variabel bernama 'piring_1' dengan value "manggis", 'piring_2' dengan value "pisang", dan 'piring_3' dengan value 0
+2. Ubah value 'piring_3' dengan value 'piring_1'
+3. Ubah value 'piring_1' dengan value 'piring_2'
+4. Ubah value 'piring_2' dengan value 'piring_3'
