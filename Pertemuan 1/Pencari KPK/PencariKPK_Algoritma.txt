@@ -1,0 +1,5 @@
+1. Buat variabel 'x' dan 'y' dengan value 'bilanganSatu' dan 'bilanganDua'
+2. Selama x != y lakukan:
+	1. Jika x > y maka y = y + bilanganDua
+	2. Jika x < y maka x = x + bilanganSatu
+3. Jika x = y kembalikan nilai x

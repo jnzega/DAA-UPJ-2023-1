@@ -1,0 +1,20 @@
+START
+	FUNCTION cariKPK(bilanganSatu, bilanganDua)
+		
+		DECLARE INTEGER:
+			x = bilanganSatu
+			y = bilanganDua
+		
+		WHILE x != y DO:
+			IF x > y THEN:
+				SET y = y + bilanganDua
+			ELSE IF x < y THEN:
+				SET x = x + bilanganSatu
+			END-IF
+		END-WHILE
+		
+		RETURN VALUE OF x
+	END-FUNCTION
+	
+	PRINT("Hasil dari pencarian KPK dari kedua bilangan adalah: {cariKPK(3, 4)})
+END
