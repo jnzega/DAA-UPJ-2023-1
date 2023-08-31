@@ -1,0 +1,17 @@
+START
+	FUNCTION luasSegitiga(valueAlas, valueTinggi):
+		
+		DECLARE INTEGER:
+			x = valueAlas
+			y = valueTinggi
+			hasilLuas = 0
+		
+		SET VALUE:
+			hasilLuas = 1/2 * x * y
+		
+		RETURN VALUE OF hasilLuas
+	
+	END-FUNCTION
+	
+	PRINT(luasSegitiga(25, 30))
+END
