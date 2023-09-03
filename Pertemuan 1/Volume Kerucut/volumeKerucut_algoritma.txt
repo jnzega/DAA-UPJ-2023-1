@@ -1,0 +1,5 @@
+1. Buat variabel 'x' dan 'y' dengan value 'valueDiameter' dan 'valueTinggi'
+2. Buat variabel diameterToJarijari = x/2
+3. Buat variabel z = diameterToJarijari
+4. Buat variabel hasilVolume dengan value = 1/3*3.14*z^2*y
+5. Print hasilVolume
