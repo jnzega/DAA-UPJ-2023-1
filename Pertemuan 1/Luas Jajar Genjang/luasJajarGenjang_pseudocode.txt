@@ -1,0 +1,17 @@
+START
+	FUNCTION luasJajarGenjang(valueAlas, valueTinggi):
+	
+		DECLARE INTEGER:
+		x = valueAlas
+		y = valueTinggi
+		hasilLuas = 0
+	
+		SET VALUE TO:
+		hasilLuas = x * y
+	
+		RETURN VALUE hasilLuas
+	
+	END-FUNCTION
+	
+	PRINT(luasJajarGenjang(5, 3))
+END
