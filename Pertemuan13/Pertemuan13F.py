@@ -1,15 +1,9 @@
-def bfs(graph, start):
-    visited = []
-    queue = []
-    queue = [start]
-    while queue:
-        node = queue.pop(0)
-        if node not in visited:
-            visited.append(node)
-            neighbours = graph[node]
-            for neighbour in neighbours:
-                queue.append(neighbour)
-    return visited
+def dfs(visited, graph, node):
+    if node not in visited:
+        print(node)
+        visited.add(node)
+        for neighbour in graph[node]:
+            dfs(visited, graph, neighbour)
 
 graph = {'Rektor' : ['Warek 1', 'Warek 2'],
          'Warek 1' : ['Rektor'],
@@ -26,4 +20,6 @@ graph = {'Rektor' : ['Warek 1', 'Warek 2'],
          'Dosen G' : ['Kaprodi 3'],
          }
 
-print(bfs(graph, 'Rektor'))
+visited = set()
+
+dfs(visited,graph, 'Rektor')

@@ -9,21 +9,21 @@ def bfs(graph, start):
             neighbours = graph[node]
             for neighbour in neighbours:
                 queue.append(neighbour)
-    return visited
+    print(visited)
 
-graph = {'Rektor' : ['Warek 1', 'Warek 2'],
-         'Warek 1' : ['Rektor'],
-         'Warek 2' : ['Rektor', 'Kaprodi 1', 'Kaprodi 2', 'Kaprodi 3'],
-         'Kaprodi 1' : ['Warek 2', 'Dosen A', 'Dosen B', 'Dosen C'],
-         'Dosen A' : ['Kaprodi 1'],
-         'Dosen B' : ['Kaprodi 1'],
-         'Dosen C' : ['Kaprodi 1'],
-         'Kaprodi 2' : ['Warek 2', 'Dosen D', 'Dosen E'],
-         'Dosen D' : ['Kaprodi 2'],
-         'Dosen E' : ['Kaprodi 2'],
-         'Kaprodi 3' : ['Warek 2','Dosen F', 'Dosen G'],
-         'Dosen F' : ['Kaprodi 3'],
-         'Dosen G' : ['Kaprodi 3'],
+graph = {0 : [7, 9, 11],
+         1 : [8, 10],
+         2 : [3, 12],
+         3 : [2, 4],
+         4 : [3],
+         5 : [6],
+         6 : [7],
+         7 : [0, 3, 11],
+         8 : [1, 9, 12],
+         9 : [0, 8, 10],
+         10 : [1, 9],
+         11 : [0, 7],
+         12 : [2, 8]
          }
 
-print(bfs(graph, 'Dosen G'))
+bfs(graph, 0)
